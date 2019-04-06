@@ -1,6 +1,6 @@
 Examples of two instanes for each class:
 
-   Class                                Instance #1                            Instance #2
+   Class                                 Instance #1                           Instance #2
 
 a. automobile manufacturer               Toyota                                Tesla
 
