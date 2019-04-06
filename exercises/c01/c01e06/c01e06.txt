@@ -1,12 +1,15 @@
 Examples of applicable queries and the appropriate return values for the following objects:
 
-a. classroom in a class scheduling program - query: roomNumber(), type of return value: int
+   Object                                    Query         Type of Return Value
 
-b. book in a library catalogue - query: title(), type of return value: String
+a. classroom in a class scheduling program   roomNumber()  int
 
-c. back pack in a retail inventory system - query: itemNumber(), type of return value: int
+b. book in a library catalogue               title()       String
 
-d. back pack in a video game - query: color(), type of return value: reference-to-Color
-                               *Color is a class defined separately by the software designer
+c. back pack in a retail inventory system    itemNumber()  int
 
-e. elevator in a simulation - query: load(), type of return value: double
+d. back pack in a video game                 color()       reference-to-Color
+
+e. elevator in a simulation                  load()        double
+
+* Color is a class defined separately by the software designer
