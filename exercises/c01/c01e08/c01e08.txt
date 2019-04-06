@@ -1,0 +1,11 @@
+Examples of two instanes for each class:
+
+   Class                                Instance #1                            Instance #2
+
+a. automobile manufacturer               Toyota                                Tesla
+
+b. automobiles in a dealer's inventory   2017 Chrysler 300 Limited             2017 Jaguar F-Pace 20d Premium
+
+c. videos in a video rental store        Batman v. Superman: Dawn of Justice   Saban's Power Rangers
+
+d. consumers of a video rental store     John Doe                              Jane Doe
