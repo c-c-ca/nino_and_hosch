@@ -1,0 +1,13 @@
+Properties for a combination lock may include the combination for the lock and whether
+or not the lock is currently locked.
+
+Possible types that may be used for the properties suggested above include type int
+for the lock combination and type boolean to describe whether or not it is locked.
+
+A possible query supported by a object modeling a combination lock may be isLocked,
+which can be used to determine whether or not the lock is currently locked.
+
+Possible commands for the lock may include lock, which could set an isLocked property
+to true, enterCombination, which allows for a combination to be entered in order to
+unlock the lock, and setCombination, which can be used to set the combination for
+the lock.
