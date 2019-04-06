@@ -10,6 +10,6 @@ c. back pack in a retail inventory system    itemNumber()  int
 
 d. back pack in a video game                 color()       reference-to-Color
 
-e. elevator in a simulation                  load()        double
+e. elevator in a simulation                  floor()       int
 
 * Color is a class defined separately by the software designer
