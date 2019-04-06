@@ -1,4 +1,4 @@
-Examples of two instanes for each class:
+Examples of two instances for each class:
 
    Class                                 Instance #1                           Instance #2
 
