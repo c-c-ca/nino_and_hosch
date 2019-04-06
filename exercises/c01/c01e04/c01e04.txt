@@ -1,0 +1,21 @@
+Properties that a class section object might have:
+
+Property      Type
+
+class size    int
+
+start time    double
+
+end time      double
+
+days          reference-to-String
+
+course        reference-to-Course
+
+instructor    reference-to-Person
+
+room          reference-to-Room
+
+start date    reference-to-Date
+
+end date      reference-to-Date
