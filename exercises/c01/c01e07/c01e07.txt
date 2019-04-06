@@ -1,0 +1,15 @@
+Examples of commands and the associated modified property for the following objects:
+
+   Object                                    Query           Modified Property
+
+a. classroom in a class scheduling program   immutable       --
+
+b. book in a library catalogue               checkOut()      checkedOut
+
+c. back pack in a retail inventory system    sell()          numberInStock
+
+d. back pack in a video game                 addItem()       contents
+
+e. elevator in a simulation                  changeFloor()   height
+
+* Color is a class defined separately by the software designer
