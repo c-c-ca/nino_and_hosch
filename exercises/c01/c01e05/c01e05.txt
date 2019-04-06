@@ -1,0 +1,11 @@
+Possible properties for the following objects:
+
+a. classroom in a class scheduling program - roomNumber, floor, building, maximumOccupancy
+
+b. book in a library catalogue - author, title, subject, datePublished, deweyDecimalNumber
+
+c. back pack in a retail inventory system - itemNumber, price, numberInStock, manufacturer
+
+d. back pack in a video game - color, shape, contents
+
+e. elevator in a simulation - load, currentLocation, destination
