@@ -11,5 +11,3 @@ c. back pack in a retail inventory system    sell()          numberInStock
 d. back pack in a video game                 addItem()       contents
 
 e. elevator in a simulation                  changeFloor()   height
-
-* Color is a class defined separately by the software designer
