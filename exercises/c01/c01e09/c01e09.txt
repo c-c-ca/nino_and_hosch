@@ -1,0 +1,12 @@
+Examples of a property whose associated value is of a primitive type, and a property whose associated
+value is of a reference type:
+
+   Class                                    Primitive               Reference
+
+a. automobile manufacturer                  yearFounded - int       owner - reference-to-Person
+
+b. automobiles in a dealer's inventory      doors - int             manufacturer - reference-to-Manufacturer
+
+c. videos in a video rental store           copies - int            title - reference-to-String
+
+d. consumers of a video rental store        balance - int           name - reference-to-String
