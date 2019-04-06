@@ -1,5 +1,5 @@
-Examples of a property whose associated value is of a primitive type, and a property whose associated
-value is of a reference type:
+Examples of objects which have a property whose associated value is of a primitive type, and also have a 
+property whose associated value is of a reference type:
 
    Class                                    Primitive               Reference
 
