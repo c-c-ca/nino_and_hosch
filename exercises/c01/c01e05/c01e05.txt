@@ -10,4 +10,4 @@ c. back pack in a retail inventory system    itemNumber, price, numberInStock, m
 
 d. back pack in a video game                 color, shape, contents
 
-e. elevator in a simulation                  load, velocity, height, destination
+e. elevator in a simulation                  floor, direction, destination
