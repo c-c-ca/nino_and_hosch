@@ -1,0 +1,9 @@
+One possiblity for the type that may be used to serve as the type associated with the
+setting property is type int.
+
+One possible query may include currentSetting, which will return the current setting
+for the lamp (i.e. whether it is currently off, set to low, medium, or high).
+
+One possible command may include changeSetting, which rotates the lamp's state through
+all four of its possible states.  That is, a call to changeSetting will change the 
+lamp's setting property to low if it's setting is set to off before the method call.
