@@ -1,0 +1,10 @@
+Properties of an object used to model a street address include the house number,
+street name, city, state, and zip code.
+
+Instance variable definitions for these properties:
+
+private String houseNumber;
+private String streetName;
+private String city;
+private String state;
+private int zipCode;
