@@ -7,9 +7,12 @@ a. computer game               player          run, strike, jump
                                game manager    record score, track level
 
 b. traffic flow                counter         record number of vehicles passing by
+                               vehicle         speed of vehicle passing by
+                               thoroughfare    number of lanes, speed limit
 
 c. inventory control system    catalogue       maintains a list of items the store sells
                                item            keeps track of how many units are available for that item
+                               vendors         phone number, address
 
 d. vending machine             keypad          provides a user interface that allows users to enter codes
                                inventory       keeps track how many units for each item are available
@@ -22,5 +25,6 @@ f. translator                  interface       allows a user to enter a word alo
                                dictionary      provides a translation for a given word
 
 g. genealogical data           interface       allows users to enter information
+                               individual      ancestors, descendants
                                mapper          calculates and determines relationships between different members
-                                               in the database         
+                                               in the database   
