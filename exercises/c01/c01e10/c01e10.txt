@@ -1,0 +1,26 @@
+Suggested objects to be included in the system design of the following applications
+with one or two responsibilities per object:
+
+   Application                 Object          Responsibilities
+
+a. computer game               player          run, strike, jump
+                               game manager    record score, track level
+
+b. traffic flow                counter         record number of vehicles passing by
+
+c. inventory control system    catalogue       maintains a list of items the store sells
+                               item            keeps track of how many units are available for that item
+
+d. vending machine             keypad          provides a user interface that allows users to enter codes
+                               inventory       keeps track how many units for each item are available
+
+e. registration system         student         provides an account for a student to use
+                               course          students can sign up for courses, which offer possible course
+                                               sections that they can choose from
+
+f. translator                  interface       allows a user to enter a word along with the language of origin
+                               dictionary      provides a translation for a given word
+
+g. genealogical data           interface       allows users to enter information
+                               mapper          calculates and determines relationships between different members
+                                               in the database         
