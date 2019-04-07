@@ -1,0 +1,25 @@
+Proposed identifiers for a class used to model an item of inventory in a retail store.
+
+Syntactic component         Identifier
+
+class name                  Item
+
+feature (query)             inStock
+
+feature (query)             price
+
+feature (command)           restock
+
+feature (command)           discount
+
+feature (command)           sell
+
+Examples of inappropriate identifiers:
+
+Syntactic component         Identifier      Violation
+
+class name                  ClassItem       Includes syntactic structure
+
+feature (query)             price$$$        The $ character should only be included in computer generated source code
+
+feature (query)             10stock         Identifiers may not begin with digits
