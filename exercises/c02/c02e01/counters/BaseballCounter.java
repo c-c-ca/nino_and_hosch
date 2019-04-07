@@ -8,6 +8,10 @@ class BaseballCounter {
 
     // Constructor:
 
+    /**
+     * Create a new BaseballCounter.  The number of balls and
+     * strikes are initially set to 0.
+     */
     public BaseballCounter () {}
 
     // Queries:
