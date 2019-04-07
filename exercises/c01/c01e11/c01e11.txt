@@ -1,0 +1,5 @@
+Common properties between a class modeling students in a university registration system
+and a class modeling students in a university library: name, address.
+
+It would be possible to have a singel ojbect represent a student for both purposes, but
+some properties that belong to the student in one system would seem irrelevant in another.
