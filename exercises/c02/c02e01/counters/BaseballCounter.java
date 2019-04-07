@@ -6,11 +6,6 @@ package counters;
  */
 class BaseballCounter {
 
-    // Private components:
-
-    private int strikes;    // number of strikes
-    private int balls;      // number of balls
-
     // Constructor:
 
     public BaseballCounter () {}
