@@ -1,5 +1,10 @@
 Common properties between a class modeling students in a university registration system
-and a class modeling students in a university library: name, address.
+and a class modeling students in a university library: name and contact information,
+such as address and phone number.
 
-It would be possible to have a singel ojbect represent a student for both purposes, but
-some properties that belong to the student in one system would seem irrelevant in another.
+It would be possible to have a singel object represent a student for both purposes, but
+some properties that belong to the student in one system would be extraneous in another.
+That is, while the GPA and class status of a student may be important in a university
+registration system, it isn't necessary to have this information in the university
+library system.
+
