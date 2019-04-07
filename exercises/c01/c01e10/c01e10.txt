@@ -4,6 +4,7 @@ with one or two responsibilities per object:
    Application                 Object          Responsibilities
 
 a. computer game               player          run, strike, jump
+                               map             player location, enemy locations
                                game manager    record score, track level
 
 b. traffic flow                counter         record number of vehicles passing by
