@@ -3,7 +3,7 @@ package addresses;
 /**
  * Models a street address.
  */
-class StreetAddress {
+public class StreetAddress {
 
     // Constructor:
 
