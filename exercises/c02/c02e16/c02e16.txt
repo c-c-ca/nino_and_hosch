@@ -1,0 +1,3 @@
+Package containing class String:   java.lang
+Number of constructors:            15
+Number of factory methods:         18
