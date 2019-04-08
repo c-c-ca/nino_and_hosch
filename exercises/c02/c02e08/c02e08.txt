@@ -1,0 +1,2 @@
+dollars = pennies / 100;
+cents = pennies % 100;
