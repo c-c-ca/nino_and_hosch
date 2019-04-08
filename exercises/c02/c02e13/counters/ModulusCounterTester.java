@@ -1,14 +1,14 @@
 package counters;
 
 /**
- * A simple tester for the class Counter.
+ * A simple tester for the class ModulusCounter.
  */
 public class ModulusCounterTester {
 
     private ModulusCounter counter;
 
     /**
-     * Create a new CounterTester
+     * Create a new ModulusCounterTester
      */
     public ModulusCounterTester () {}
 
