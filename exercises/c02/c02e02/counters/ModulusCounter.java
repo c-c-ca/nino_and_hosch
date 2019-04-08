@@ -3,7 +3,7 @@ package counters;
 /**
  * Models a counter that resets when the count reaches a maximum value.
  */
-class ModulusCounter {
+public class ModulusCounter {
 
     // Constructor:
 
