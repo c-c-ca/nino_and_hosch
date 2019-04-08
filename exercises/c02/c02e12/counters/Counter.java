@@ -1,3 +1,5 @@
+package counters;
+
 /**
  * Models a simple integer counter.
  */

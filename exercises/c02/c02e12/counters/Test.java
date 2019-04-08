@@ -1,3 +1,5 @@
+package counters;
+
 /**
  * Test the class Counter.
  */
