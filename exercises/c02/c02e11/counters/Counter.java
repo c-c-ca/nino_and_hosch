@@ -45,7 +45,7 @@ public class Counter {
     /**
      * Doubles the count.
      */
-    public void double () {
+    public void doubleCount () {
         count *= 2;
     }
 
