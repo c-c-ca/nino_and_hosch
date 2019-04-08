@@ -1,0 +1,3 @@
+ones = i % 10;
+tens = i / 10 % 10;
+hundreds = i / 100;
