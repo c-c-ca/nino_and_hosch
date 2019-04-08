@@ -4,13 +4,13 @@ package counters;
  * Models a simple counter that counts balls and strikes in a
  * baseball game.
  */
-class BaseballCounter {
+public class BaseballCounter {
 
     // Constructor:
 
     /**
      * Create a new BaseballCounter.  The number of balls and
-     * strikes are initially set to 0.
+     * strikes are initially set to 0.2
      */
     public BaseballCounter () {}
 
