@@ -1,0 +1,2 @@
+cents = (nickels * 5 + pennies) % 100;
+dollars = (nickels * 5 + pennies) / 100;
