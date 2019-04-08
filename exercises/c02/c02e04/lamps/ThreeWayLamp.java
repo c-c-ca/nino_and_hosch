@@ -3,7 +3,7 @@ package lamps;
 /**
  * Models a simple three-way lamp.
  */
-class ThreeWayLamp {
+public class ThreeWayLamp {
 
     // Named constants:
 
