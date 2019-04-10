@@ -32,7 +32,8 @@ public class Student {
     // Queries:
 
     /**
-     * The adjusted grade for this Student.
+     * The adjusted grade for this Student.  highGrade must
+     * be a non-negative integer.
      */
     public int adjustedGrade (int highGrade) {
         int maxAdjustment = MAX_SCORE - highGrade;
