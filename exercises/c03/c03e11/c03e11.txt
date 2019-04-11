@@ -1,0 +1,2 @@
+The predefined class Math belongs to the package java.lang.
+All methods in this class are static.
