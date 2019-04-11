@@ -38,7 +38,7 @@ public class ModulusCounter {
      * the count reaches the maximum value.
      */
     public void increment () {
-        this.count = (this.count + 1) % maxVal;
+        this.count = (this.count + 1) % (maxVal + 1);
     }
 
 }
