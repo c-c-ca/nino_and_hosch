@@ -1,2 +1,0 @@
-javac figures/*.java
-java figures/Test
