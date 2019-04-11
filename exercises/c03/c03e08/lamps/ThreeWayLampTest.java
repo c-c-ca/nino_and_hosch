@@ -25,7 +25,7 @@ class ThreeWayLampTest {
     /**
      * Test the ThreeWayLamp's initial state.
      */
-    public void testInitialState () {
+    private void testInitialState () {
         System.out.println("testInitialState:");
         System.out.println("Initial setting: " + lamp.setting());
     }
@@ -33,7 +33,7 @@ class ThreeWayLampTest {
     /**
      * Test the method change.
      */
-    public void testChange () {
+    private void testChange () {
         System.out.println("testChange:");
         System.out.println("Starting setting: " + lamp.setting());
         lamp.change();
