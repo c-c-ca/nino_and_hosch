@@ -1,0 +1,10 @@
+if (score >= 93)
+    grade = 'A';
+else if (score >= 85)
+    grade = 'B';
+else if (score >= 77)
+    grade = 'C';
+else if (score >= 70)
+    grade = 'D';
+else
+    grade = 'F';
