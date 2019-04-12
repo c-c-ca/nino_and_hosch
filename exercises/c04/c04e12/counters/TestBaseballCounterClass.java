@@ -86,7 +86,7 @@ class BaseballCounterTest {
 public class TestBaseballCounterClass {
 
     /**
-     * Run a DateTest.
+     * Run a BaseballCounterTest.
      */
     public static void main (String[] args) {
         (new BaseballCounterTest()).runTest();
