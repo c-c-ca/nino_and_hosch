@@ -1,6 +1,6 @@
-In Java, there are various representations for the same integer literal.  To express 
-an integer literal in its octal representation, it must be preceded by a 0.  The value
-used when attempting to open the lock, however, is not preceded by a 0 and is therefore
-in its decimal representation.  In this case, the equivalent decimal representation of
-an integer that is 023 in octal is 19, which explains why the lock is opened when open
-is called with a value of 19.
+In Java, there are various representations for integer literals that can be used to
+express the same value.  To express an integer literal in its octal representation,
+it must be preceded by a 0.  The integer literal used when attempting to open the
+lock, however, is not preceded by any characters and is therefore in its decimal
+representation.  In this case, the equivalent decimal representation of an integer
+literal that is expressed as 023 is 19, which explains the behavior of the lock.
