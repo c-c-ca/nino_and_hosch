@@ -1,0 +1,11 @@
+a. If you don't do the homework, then you're grounded!
+
+b. If you don't pass the exam, then drop the course.
+
+c. If you have the money, go to the movies; else, clean your room.
+
+d. If Peter is not in the warehouse, then I have to work overtime.
+
+e. If today is Tuesday or Thursday, then I go to school;
+   if today is Monday, Wednesday, or Friday, then I got to work;
+   else, I hange out.
