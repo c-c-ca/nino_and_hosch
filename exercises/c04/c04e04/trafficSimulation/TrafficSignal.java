@@ -1,7 +1,7 @@
 package trafficSimulation;
 
 /**
- * Models a simple green-yellow-red traffic signal.
+ * Models a simple green-yellow-red traffic signal with left-turn signal.
  */
 public class TrafficSignal {
 
