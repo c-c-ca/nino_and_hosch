@@ -5,6 +5,22 @@ package displayScreen;
  */
 public class Location {
 
+    // Private components:
+
+    private int x;  // the x-coordinate
+    private int y;  // the y-coordinate
+
+    // Constructors:
+
+    /**
+     * Create a new Location.
+     *
+     * @require  x >= 0 && y >= 0
+     */
+    public Location (int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
     // Queries:
 
@@ -13,7 +29,7 @@ public class Location {
      * left of the screen.
      */
     public int x () {
-        return 0;
+        return x;
     }
 
     /**
@@ -21,6 +37,6 @@ public class Location {
      * top of the screen.
      */
     public int y () {
-        return 0;
+        return y;
     }
 }
