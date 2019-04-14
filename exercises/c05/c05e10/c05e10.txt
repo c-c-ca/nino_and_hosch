@@ -1,0 +1,9 @@
+To design this new game, we cannot use the class Explorer as it currently exists.
+For instance, the suggestion of a deficit tolerance is a violation of a class
+invariant.
+
+Modifications will need to be made to the documentation for the takeThat method
+to explain what calling the method with a negative argument means (i.e. the
+notion of a magic tolerance-giving hit) and remove the post-condition that
+tolerance will be greater than or equal to zero after the method has completed
+execution.
