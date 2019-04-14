@@ -26,10 +26,8 @@ public class PlayingCard {
       s2 = c2.suit();
       if (r1.compareTo(r2) != 0)
         higherThan = r1.compareTo(r2) > 0;
-      else if (s1.compareTo(s2) != 0)
+      else
         higherThan = s1.compareTo(s2) > 0;
-      else // same card
-        higherThan = false;
       return higherThan;
   }
 
