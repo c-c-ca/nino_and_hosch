@@ -4,6 +4,6 @@ invariant.
 
 Modifications will need to be made to the documentation for the takeThat method
 to explain what calling the method with a negative argument means (i.e. the
-notion of a magic tolerance-giving hit) and remove the post-condition that
-tolerance will be greater than or equal to zero after the method has completed
-execution.
+notion of a magic tolerance-giving hit).  It will also be necessary to remove
+any post-conditions that ensure tolerance will be greater than or equal to zero
+after that method has completed execution where this can no longer be promised.
