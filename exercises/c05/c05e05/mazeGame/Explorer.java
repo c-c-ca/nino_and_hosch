@@ -36,7 +36,7 @@ public class Explorer {
             "precondition: location != null";
         assert annoyability >= 0 :
             "precondition: annoyability (" + annoyability + ") >= 0";
-        assert tolerance >= 0:
+        assert tolerance >= 0 :
             "precondition: tolerance (" + tolerance + ") >= 0";
         this.name = name;
         this.location = location;
@@ -91,6 +91,8 @@ public class Explorer {
     /**
      * Receive a poke of the specified number of hit
      * points.
+     * @require    annoyance >= 0
+     * @ensure     this.tolerance() <= old.tolerance()
      */
     public void takeThat (int annoyance) {
         if (annoyance <= tolerance)
