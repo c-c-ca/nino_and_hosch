@@ -1,0 +1,7 @@
+Assert statements can be used to verify query postconditions, but writing this is
+not much different than saying "I don't trust myself to write correct code, but
+I do trust myself to write and test a correct postcondition."  For this reason,
+verifying preconditions is much more common than verify postconditions.  That is,
+the result may be verified before returning the value to the user, but this issue
+should be dealt with by implementing the method correctly and in  accordance with
+the contract.
