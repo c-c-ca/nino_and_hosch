@@ -43,6 +43,8 @@ public class ModulusCounter {
     /**
      * Increments the current count by one.  The counter is reset if
      * the count reaches the maximum value.
+     * @ensure     this.count() == old.count() + 1 ||
+     *             this.count() == 0
      */
     public void increment () {
         this.count = (this.count + 1) % (maxValue + 1);
