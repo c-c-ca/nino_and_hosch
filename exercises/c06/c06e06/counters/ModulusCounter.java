@@ -15,7 +15,7 @@ public class ModulusCounter {
     /**
      * Create a new ModulusCounter with a specified maximum value.
      * @require    maxValue >= 0
-     * @ensure     this.count() == maxValue
+     * @ensure     this.count() == 0
      */
     public ModulusCounter (int maxValue) {
         this.count = 0;
