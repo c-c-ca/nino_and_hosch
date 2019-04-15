@@ -13,7 +13,7 @@ public class StudentTest {
     private Student hours3;   // max # of credit hours for a 500 dollar fee
     private Student hours4;   // min # of credit hours for a 750 dollar fee
     private Student hours6;   // max # of credit hours for a 750 dollar fee
-    private Student hours7;   // max # of credit hours for a 1000 dollar fee
+    private Student hours7;   // min # of credit hours for a 1000 dollar fee
     private Student hours9;   // max # of credit hours for a 1000 dollar fee
     private Student hours10;  // min # of credit hours for a 1250 dollar fee
 
