@@ -28,16 +28,16 @@ public class Student {
     /**
      * The fee amount for this Student.
      */
-    public int fee () {
-        int fee;
+    public int fees () {
+        int fees;
         if (creditHours <= 3)
-            fee = 500;
+            fees = 500;
         else if (creditHours <= 6)
-            fee = 750;
+            fees = 750;
         else if (creditHours <= 9)
-            fee = 1000;
+            fees = 1000;
         else
-            fee = 1250;
-        return fee;
+            fees = 1250;
+        return fees;
     }
 }
