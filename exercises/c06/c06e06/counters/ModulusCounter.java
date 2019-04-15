@@ -26,6 +26,7 @@ public class ModulusCounter {
 
     /**
      * The current count.
+     * @ensure     0 <= result && result <= this.maxValue()
      */
     public int count () {
         return count;
@@ -33,6 +34,7 @@ public class ModulusCounter {
 
     /**
      * The maximum value for this ModulusCounter.
+     * @ensure     result >= 0
      */
     public int maxValue () {
         return maxValue;
