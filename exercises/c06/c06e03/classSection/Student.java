@@ -41,7 +41,7 @@ public class Student {
      * The letter grade for this student.
      * @ensure     result == 'A' || result == 'B' ||
      *             result == 'C' || result == 'D' ||
-     *             result = 'F'
+     *             result == 'F'
      */
     public char letterGrade () {
         char letterGrade;
