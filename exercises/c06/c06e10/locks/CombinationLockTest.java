@@ -187,11 +187,6 @@ public class CombinationLockTest {
         incorrectSecondDigit(lock123,1,0,2,3);
     }
 
-    /**
-     * Test that entering an incorrect third digit for a lock
-     * resets the first lock (i.e. the user must enter the
-     * correct first digit, not the second).
-     */
     private void incorrectThirdDigitResetFirst (
         CombinationLock lock, int first, int second,
         int badThird, int third) {
