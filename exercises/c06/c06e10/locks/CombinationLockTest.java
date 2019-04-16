@@ -216,6 +216,7 @@ public class CombinationLockTest {
         incorrectThirdDigitResetFirst(lock001,0,0,2,1);
         incorrectThirdDigitResetFirst(lock012,0,1,1,2);
         incorrectThirdDigitResetFirst(lock112,1,1,3,2);
+        incorrectThirdDigitResetFirst(lock121,1,2,3,1);
         incorrectThirdDigitResetFirst(lock122,1,2,3,2);
         incorrectThirdDigitResetFirst(lock123,1,2,2,3);
         // entering an incorrect third digit resets second comb
@@ -225,6 +226,7 @@ public class CombinationLockTest {
         incorrectThirdDigitResetSecond(lock122,1,2,3,2);
         // incorrect 3rd, but correct 2nd
         incorrectThirdDigitResetSecond(lock012,0,1,1,2);
+        incorrectThirdDigitResetSecond(lock121,1,2,2,1);
         incorrectThirdDigitResetSecond(lock123,1,2,2,3);
     }
 
