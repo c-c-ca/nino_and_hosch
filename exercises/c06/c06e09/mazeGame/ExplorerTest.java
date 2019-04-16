@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 public class ExplorerTest {
 
     // explorers with the specified annoyabilities and tolerances
-    private Explorer typical;
-    private Explorer noAnnoyability;
-    private Explorer noTolerance;
+    private Explorer typical;         // annoyability: 10; tolerance: 100
+    private Explorer noAnnoyability;  // annoyability:  0; tolerance: 100
+    private Explorer noTolerance;     // annoyability: 10; tolerance:   0
 
     private Room start;
     private Room finish;
@@ -31,13 +31,13 @@ public class ExplorerTest {
     @Test
     public void testInitialState () {
         assertEquals(
-            "initial state name", "", typical.name());
+            "name", "", typical.name());
         assertEquals(
-            "initial state location", start, typical.location());
+            "initial location", start, typical.location());
         assertEquals(
-            "initial state annoyability", 10, typical.annoyability());
+            "initial annoyability", 10, typical.annoyability());
         assertEquals(
-            "initial state tolerance", 100, typical.tolerance());
+            "initial tolerance", 100, typical.tolerance());
     }
 
     /**
