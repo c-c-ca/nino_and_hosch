@@ -45,8 +45,12 @@ public class ExplorerTest {
      */
     @Test
     public void testMove () {
+        // change locations
         typical.move(finish);
         assertEquals("move", finish, typical.location());
+        // return to original location
+        typical.move(start);
+        assertEquals("move back", finish, typical.location());
     }
 
     private void takeNothing (Explorer explorer) {
