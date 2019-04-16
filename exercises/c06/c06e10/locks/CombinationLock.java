@@ -71,8 +71,11 @@ public class CombinationLock {
                 needSecond = (digit == digit1st);
                 needThird = false;
             }
-        else if (needSecond && digit == digit2nd)
-            needThird = true;
+        else if (needSecond)
+            if (digit == digit2nd)
+                needThird = true;
+            else
+                needSecond = (digit == digit1st);
         else
             needSecond = (digit == digit1st);
     }
