@@ -65,6 +65,7 @@ public class CircleTUI {
     }
 
     private void displayStartMenu () {
+        System.out.println();
         System.out.println(
             "Enter the number denoting the action " +
             "to perform:");
@@ -104,7 +105,8 @@ public class CircleTUI {
     }
 
     private void executeMainChoice (int choice) {
-        System.out.println();
+        if (choice != EXIT)
+            System.out.println();
         if (choice == RADIUS)
             System.out.println(
                 "Radius is " + circle.radius());
