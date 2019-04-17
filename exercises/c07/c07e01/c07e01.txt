@@ -1,0 +1,9 @@
+The constant out is of type PrintStream.
+
+There are 10 methods with the name println, which are distinguished
+from each other by the type of the argument used when each is
+invoked.
+
+print(int i) will write to standard output the sequences of characters
+used to represent the digits in the integer i.  write(int b) will
+write the specified byte to the output stream.
