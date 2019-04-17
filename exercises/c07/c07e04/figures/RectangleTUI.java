@@ -67,6 +67,7 @@ public class RectangleTUI {
     }
 
     private void displayStartMenu () {
+        System.out.println();
         System.out.println(
             "Enter the number denoting the action " +
             "to perform:");
@@ -106,7 +107,8 @@ public class RectangleTUI {
     }
 
     private void executeMainChoice (int choice) {
-        System.out.println();
+        if (choice != EXIT)
+            System.out.println();
         if (choice == LENGTH)
             System.out.println(
                 "Length is " + rectangle.length());
