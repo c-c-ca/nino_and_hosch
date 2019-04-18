@@ -1,2 +1,0 @@
-javac -cp /usr/share/java/junit4-4.12.jar oracles/*.java
-java -cp /usr/share/java/junit4-4.12.jar:. org.junit.runner.JUnitCore oracles.OracleTest
