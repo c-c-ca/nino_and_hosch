@@ -1,0 +1,69 @@
+Game: monopoly
+
+Model Classes                    Responsibilities
+
+Cards                            know:
+                                      the instructions printed on
+                                          the card
+Deeds                            know:
+                                      which property the deed is for
+                                      the purchase price
+                                      mortgage value
+                                      the cost building a house or
+                                          hotel on that property
+                                      the various rents
+Dice                             do:
+                                      roll the dice
+                                 know:
+                                      the number of sides
+Houses                           know:
+                                      where the house is located
+Hotels                           know:
+                                      where the hotel is located
+Money                            know:
+                                      the associated value
+Token                            do:
+                                      move across spaces on the
+                                          board
+                                 know:
+                                      what position the token
+                                          currently occupies on
+                                          the board
+Board                            know:
+                                      the Tokens
+                                      the Houses
+                                      the Hotels
+                                      the Spaces
+Spaces                           do:
+                                      performs the action that is
+                                          associated with that
+                                          space
+                                 know:
+                                      if a Hotel or House is located
+                                          at that space
+Player                           do:
+                                      take a turn by rolling the
+                                          dice
+                                      draw a card
+                                      develop a property
+                                 know:
+                                      which token belongs to that
+                                          player
+                                      how much money the player has
+                                      what houses and hotels the
+                                          player has developed
+                                      what deeds belong to the
+                                          player
+Game                             do:
+                                      conduct a play of the game,
+                                          instructing the appropriate
+                                          Player to take a turn
+                                 know:
+                                      the game rules
+                                      when the game is over
+                                      who won the game
+                                      the Players
+                                      the Board
+                                      the Cards
+                                      the Deeds
+                                      the Money

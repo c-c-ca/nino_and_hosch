@@ -1,0 +1,19 @@
+Game: cave exploration game
+
+Model Classes                    Responsibilities
+
+Cavern                           know:
+                                      the Creatures in the cavern
+Creature                         know:
+                                      the behaviors associated
+                                          with the Creature
+Explorer                         do:
+                                      interact with the Creatures
+                                      navigate the cave (i.e. move
+                                          from one Cavern to the next)
+                                 know:
+                                      the current Cavern this player is
+                                          located in
+                                      the types of interactions the player
+                                          may choose from when encountering
+                                          a Creature

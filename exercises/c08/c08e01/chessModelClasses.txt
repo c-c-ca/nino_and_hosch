@@ -1,0 +1,35 @@
+Game: chess
+
+Model Classes                    Responsibilities
+
+Pieces                           do:
+                                      move positions
+                                 know:
+                                      the rank
+                                      the color
+Positions                        know:
+                                      if the position is occupied
+                                      if occupied, what piece
+                                          occupies that position
+Board                            know:
+                                      the dimensions (how many
+                                          positions there are)
+                                      the Positions
+Player                           do:
+                                      take a turn, by moving a piece
+                                          belonging to that Player
+                                 know:
+                                      Player's name
+                                      the color of the Pieces that
+                                          belong to that Player
+Game                             do:
+                                      conduct a play of the game,
+                                          instructing the appropriate
+                                          Player to take a turn
+                                 know:
+                                      the Players
+                                      the Board
+                                      the rules of the game
+                                      when the game is over
+                                      which Player won when game is
+                                          over

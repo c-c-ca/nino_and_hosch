@@ -1,0 +1,30 @@
+Game: tic-tac-toe
+
+Model Classes                    Responsibilities
+
+Grid                             do:
+                                      marks spaces
+                                 know:
+                                      the size (number of rows and
+                                          columns)
+                                      the positions of the spaces
+                                      what spaces have been marked
+                                          and whether an X or O was
+                                          used
+Player                          do:
+                                      take a turn, by marking a space
+                                          on the Grid
+                                know:
+                                      Player's name
+                                      whether the Player marks using
+                                          X's or O's
+Game                            do:
+                                      conduct a play of the game,
+                                          instructing the appropriate
+                                          Player to take a turn
+                                know:
+                                      the Players
+                                      the Grid
+                                      when the game is over
+                                      which Player won when game is
+                                          over

@@ -1,0 +1,33 @@
+Game: maze-crawling game
+
+Model Classes                    Responsibilities
+
+Room                             know:
+                                      the Denizens in the Room
+PassageWay                       know:
+                                      the Rooms connected by this
+                                          PassageWay
+Denizen                          do:
+                                      poke the Explorer
+                                      be poked by an Explorer
+                                 know:
+                                      the amount of annoyance (hit
+                                          points) this Denizen can
+                                          inflict
+                                      the amount of tolerance (hit
+                                          points) this Denizen can
+                                          endure
+Explorer                         do:
+                                      poke a Denizen
+                                      be poked by a Denizen
+                                      navigate the maze (i.e. move
+                                          from one Room to the next)
+                                 know:
+                                      the current Room this player is
+                                          located in
+                                      the amount of annoyance (hit
+                                          points) this Explorer can
+                                          inflict
+                                      the amount of tolerance (hit
+                                          points) this Explorer can
+                                          endure
