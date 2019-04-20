@@ -1,0 +1,14 @@
+System: manage windows on a computer desktop
+
+Model Classes                    Responsibilities
+
+Location                         know:
+                                      the position or pixel on the screen
+Rectangle                        do:
+                                      minimize
+                                      maximize
+                                      close
+                                      move
+                                 know:
+                                      the Location for the upper left corner
+                                      the dimensions (length and width)

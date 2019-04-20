@@ -1,0 +1,12 @@
+System: produce and edit architectural plans for houses
+
+Model Classes                    Responsibilities
+
+Room                             know:
+                                      dimensions
+                                      number of doors
+                                      number of closets
+                                      number of windows
+Floor                            know:
+                                      the floor number
+                                      the number of Rooms on this Floor

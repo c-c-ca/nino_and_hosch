@@ -1,0 +1,27 @@
+System: manage inventory in a video store
+
+Model Classes                    Responsibilities
+
+Video                            do:
+                                      check out
+                                      check in
+                                 know:
+                                      the title for this video
+                                      the number of copies for this
+                                           title
+                                      the number of copies currently
+                                           checked out
+                                      the number of copies currently
+                                           in stock
+Customer                         do:
+                                      check out a movie
+                                      pay rental
+                                      pay overdue fee
+                                 know:
+                                      the Videos that are currently
+                                          checked out by this Customer
+                                      Customer's name
+                                      Customer's balance
+                                      Customer's phone number
+                                      Customer's email address
+                                      Customer's physical address

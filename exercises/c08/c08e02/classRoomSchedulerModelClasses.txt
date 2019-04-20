@@ -1,0 +1,20 @@
+System: schedule classrooms on a campus
+
+Model Classes                    Responsibilities
+
+ClassRoom                        do:
+                                      become occupied
+                                      free for registration
+                                 know:
+                                      the location for this classroom
+                                      what hours this ClassRoom will be
+                                          occupied
+                                      what hours this ClassRoom is available
+ClassSection                     do:
+                                      set the number of hours
+                                      set the class room where this ClassSection
+                                          will be
+                                 know:
+                                      the hours for this ClassSection
+                                      the ClassRoom where this ClassSection
+                                          will be held
