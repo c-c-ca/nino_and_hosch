@@ -20,8 +20,7 @@ public class Explorer {
     // Constructors:
 
     /**
-     * Create a new Explorer with the specified
-     * initial location.
+     * Create a new Explorer.
      */
     public Explorer () {
         this.location = null;
