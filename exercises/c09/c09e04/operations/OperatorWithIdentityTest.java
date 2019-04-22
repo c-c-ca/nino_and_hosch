@@ -4,7 +4,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 /**
- * Test class Addition and Multiplication that implement
+ * Test classes Addition and Multiplication that implement
  * the OperatorWithIdentity interface.
  */
 public class OperatorWithIdentityTest {
@@ -20,8 +20,8 @@ public class OperatorWithIdentityTest {
         mult = new Multiplication();
     }
 
-    private void testIdentity (OperatorWithIdentity op,
-                          int i) {
+    private void testIdentity (
+                 OperatorWithIdentity op, int i) {
         assertEquals(
             op.operate(op.identity(),i),
             op.operate(i,op.identity()));
@@ -48,6 +48,4 @@ public class OperatorWithIdentityTest {
         testIdentity(mult,1);
         testIdentity(mult,10);
     }
-
-
 }
