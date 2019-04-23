@@ -24,7 +24,7 @@ class NimTUI {
      * Create a new user interface.
      */
     public NimTUI () {
-        this.user = new Player("user",null);
+        this.user = new Player("user",new UserStrategy());
         this.computer = new Player("computer",new TimidStrategy());
         this.game = null;
         this.in = new Scanner(System.in);
@@ -55,7 +55,6 @@ class NimTUI {
         else
             game = new Game (computer, user,
                 numberOfSticks);
-        user.setStrategy(new UserStrategy(game,in));
         while (!game.gameOver()) {
             game.play();
             reportPlay(game.previousPlayer());

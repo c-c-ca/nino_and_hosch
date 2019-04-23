@@ -7,15 +7,12 @@ import java.util.*;
  */
 class UserStrategy implements PlayStrategy {
 
-    // Private components:
-
-    private int numberToTake;
-    private PlayStrategyObserver controller;
+    private Scanner in;
 
     // Constructors:
 
-    public UserStrategy (Game game, Scanner in) {
-        this.controller = new PlayStrategyController(game,in,this);
+    public UserStrategy () {
+        this.in = new Scanner(System.in);
     }
 
     /**
@@ -36,25 +33,20 @@ class UserStrategy implements PlayStrategy {
             max = pile.sticks();
         else
             max = maxOnATurn;
-        controller.update(this);
-        return numberToTake;
+        return readNumberToTake(max);
     }
 
-    /**
-     * Set the number of sticks this InteractivePlayer should
-     * taken on its next turn.
-     * @require    number > 0
-     */
-    public void setNumberToTake (int number) {
-        this.numberToTake = number;
-    }
-
-    /**
-     * Set the PlayerObserver this InteractivePlayer is to
-     * report to.  This InteractivePlayer will notify controller
-     * (by invoking its update method) before making a play.
-     */
-    public void register (PlayStrategyObserver controller) {
-        this.controller = controller;
+    private int readNumberToTake (int max) {
+        int number = 0;
+        while (!(0 < number && number <= max)) {
+            System.out.print("Enter number to take " +
+               "(a positive integer, at most " + max +
+               "): ");
+            System.out.flush();
+            if (in.hasNextInt())
+                number = in.nextInt();
+            in.nextLine();
+        }
+        return number;
     }
 }
