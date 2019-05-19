@@ -1,0 +1,21 @@
+The additional method definition overriding equals in class ColoredCircle breaks
+this contract, however,  since calling the equals method on a Circle c1 with a
+parameter c2 of type ColoredCircle: c1.equals(c2), does not yield the same
+result as the reverse: c2.equals(c1), meaing that the method is no longer
+symmetric.  That is, whereas before where c1.equals(c2) and c2.equals(c1) would
+always yield the same result, this is no longer necessarily the case.
+
+The method definition overriding equals in class Circle by itself does meet
+the criteria described in the Object class (i.e. it is reflexive, symmetric,
+transitive, and consistent).  Defining the method as final would satisfy
+the requirement stated in the definition for the class Object.
+
+This second implmementation of equals in class ColoredCircle fails to meet
+the requirement that the relationship is transitive. Given the following
+assignments:
+
+Circle c1 = new ColoredCircle(3,Color.BLUE);
+Circle c2 = new Circle(3);
+Circle c3 = new ColoredCircle(3,Color.RED);
+
+c1.equals(c2) and c2.equals(c3) evaluate as true, but c1.equals(c3) is false.

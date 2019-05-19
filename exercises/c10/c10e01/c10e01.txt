@@ -1,0 +1,5 @@
+6 overloaded methods: append, format, print, printf, println, write
+
+2 of these methods have the same number of parameters: print, println
+
+class String overrides the equals method
