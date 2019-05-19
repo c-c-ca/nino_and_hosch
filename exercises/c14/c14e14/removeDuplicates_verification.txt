@@ -1,0 +1,13 @@
+removeDuplicates
+
+    int i = 0;
+    while (i < elements.size()) {
+        removeDuplicatesofItemAt(i);
+        i = i+1;
+    }
+
+loop invariant:  all items in elements with an index less than i are unique, or
+                 more precisely
+
+                 for all indexes i, j: 0 <= j < i implies
+                     elements.count(elements.get(j)) == 1

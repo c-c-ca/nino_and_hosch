@@ -1,0 +1,16 @@
+minFinalExam
+
+    int low = students.get(0).finalExam();
+    int i = 0;
+    while (i < students.size()-1) {
+        i = i+1;
+        if (students.get(i).finalExam() < low)
+            low = students.get(i).finalExam();
+    }
+    return low;
+
+loop invariant:  for all students with an index less than or equal to i, low
+                 is the lowest finalGrade encountered so far, or more precisely
+
+                 for all indexes i, j: 0 <= j <= i implies
+                     students.get(j).finalExam() <= low

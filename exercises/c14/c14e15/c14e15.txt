@@ -1,0 +1,19 @@
+The method will iterate through the list last+1 (or list.size()) times, since
+next is set to 0 on each iteration of the outer loop.  first is always
+incremented and last is never modified, so the loop is guaranteed to terminate.
+
+On each iteration of the inner loop, the loop goes through each element on the 
+list.  As it does this, it compares the element currently position at index
+first and swaps it with larger items as they are encountered.  All that can
+be determined by the loop invariant is that the largest item on the list can
+be found at index first-1 after the completion of each iteration.
+
+inner loop invariant:  all items with an index less than next are less than or
+                       equal to the item located at index first
+
+outer loop invariant:  the largest element will always be placed at index first-1
+                       after each iteration; the list will otherwise remain
+                       unsorted; in other words, after the first iteration, the
+                       item with an index at 0  will be shifted up one position
+                       on the list at the conclusion of each subsequent
+                       iteration until it is positioned at list.size()-1

@@ -1,0 +1,15 @@
+indexOf
+
+    int i = 0;
+    while (i < this.size && !this.get(i).equals(element)
+        i = i+1;
+    if (i < this.size())
+        return i;
+    else
+        return -1;
+
+loop invariant:  all items with an index less than i are not equal to the
+                 specified item, or more precisely
+
+                     for all indexes i, j: 0 <= j < i implies
+                         !this.get(j).equals(element)

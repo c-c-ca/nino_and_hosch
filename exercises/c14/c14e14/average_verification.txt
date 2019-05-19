@@ -1,0 +1,16 @@
+average
+
+    int sum = 0;
+    int length = list.size();
+    int i = 0;
+    while (i < length) {
+        sum = sum + list.get(i).intValue();
+        i = i+1;
+    }
+
+loop invariant:  the value assigned to sum is equal to the sum of the
+                 elements with an index less than i, or more precisely
+
+    for all indexes j: 0 <= j < i
+        sum == list.get(0).intValue() + list.get(1).intValue() ...
+        + list.get(j).intValue();

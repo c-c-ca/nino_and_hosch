@@ -1,0 +1,77 @@
+Verify loop invariant for smallestOf.
+
+loop invariant:  small is the index of the smallest element from first
+                 up to, but not including, next
+
+for all indexes i: first <= i < next implies
+    order.compare(list.get(i),list.get(small)) >= 0
+
+Step #1:  Induction base case
+
+When the loop test is first encountered, next is equal to first+1, so
+the set of elements from first to next, excluding next, only includes
+1 element: first.  Since small was assigned to first (small == first)
+before the loop was entered, the only element in the set is small and
+so the condition that compare(list.get(i),list.get(small)) >= 0 where
+i == small is vacuously true because there is only one element in the
+set.
+
+Step #2:  Show that the loop invariant will remain true after executing
+          the if statement for either alternative
+
+1. In the case that the if-statement is evaluated as true and the
+   assignment small = next is executed, the condition that
+   compare(list.get(next),list.get(small)) < 0 and that the loop
+   invariant is true so far (i.e. small is the index of the smallest
+   item up to next) implies that next is the smallest element,
+   or more precisely,
+
+       for all indexes i:  0 <= i <= next implies
+          order.compare(list.get(i),list.get(small)) >= 0
+
+2. In the case that compare(list.get(next),list.get(small)) < 0
+   is false, the assignment is not executed and it is implied
+   that the element with index next is equal to or greater than
+   the item at index small, and if the loop invariant is true
+   so far, then it may be implied that
+
+       for all indexes i:  0 <= i <= next implies
+          order.compare(list.get(i),list.get(small)) >= 0
+
+After having examined the two possible outcomes that result from 
+evaluating the if-statement within the loop, once the statement 
+next = next + 1 is executed at the end of the loop body it can be
+assumed that
+
+    for all indexes i: i < next implies
+       order.compare(list.get(i),list.get(small)) >= 0
+
+which follows from the fact that the condition (loop invariant)
+was true before the loop body was done.
+
+Therefore, it can be assumed that the loop invariant must be
+true before entering the loop again and that it will remain true
+after exiting the next loop.
+
+It remains to be shown that the loop will terminate.
+
+Step #3:  Loop termination
+
+The condition satisfied on loop exit is next == last + 1, which
+implies
+
+   for all indexes i: 0 <= i <= last
+      compare(list.get(i),list.get(small)) >= 0
+
+In order for the loop to terminate, the loop test next <= last
+must evaluate as false.  In other words, the condition that 
+next > last must eventually occur and is guaranteed by the
+following two observations:
+
+1. the value assigned to next is incremented by the assignment 
+   statement next = next + 1 on every iteration, and
+
+2. the value assigned to last is a finite integer that cannot be
+   changed within the loop body
+
+These virtually guarantee that the loop will terminate.

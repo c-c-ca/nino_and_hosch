@@ -1,0 +1,19 @@
+Given that the ordering implemented by compare is (1) anti-symmetric,
+(2) transitive, and (3) holds that two equal elements are equivalent
+we may assume that
+
+1.  areRelated is anti-symmetric
+
+        if order.compare(x,y) == 0, then order.compare(y,x) == 0
+
+2.  areRelated is transitive
+
+        if order.compare(x,y) == 0 and order.compare(y,z) == 0,
+            then order.compare(x,z) == 0
+
+3.  equality implies equivalence
+
+        if x.equals(y), then order.compare(x,y) == 0
+
+In other words, order.compare(x,y) == 0 is an equivalence and, therefore,
+areRelated is also an equivalence.

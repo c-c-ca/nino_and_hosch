@@ -1,0 +1,22 @@
+modifiedAverage
+
+    int sum = 0;
+    int count = 0;
+    int length = list.size();
+    int i = 0;
+
+    while (i < length)
+        if (list.get(i).intValue() >= 0) {
+            sum = sum + list.get(i).intValue();
+            count = count+1;
+        }
+
+    return sum / count;
+
+loop invariant:  sum is equal to the sum of all non-negative integers in the
+                 list with an index less than i;  count is equal to the number
+                 of non-negative integers up to, but not including, index i
+
+                     for all indexes i, j; 0 <= j < i
+                         sum == sum of all values list.get(j).intValue() >= 0
+                         count == total number of list.get(j).intValue() >= 0

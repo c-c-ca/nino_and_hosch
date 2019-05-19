@@ -1,0 +1,51 @@
+Verify the loop invariant for the outer loop of the selection sort method.
+
+loop invariant:  the elements from 0 up to, but not including, first are
+in their proper position
+
+list.get(0) through list.get(first-1) are ordered, and list.get(first)
+through list.get(last) are all greater than or equivalent to
+list.get(first-1)
+
+Step #1:  Induction base case - show that the condition is true before
+          the loop is entered
+
+When the outer loop is entered on the first iteration, first == 0,
+so list.get(first-1) references an element with index of -1, for
+which there is no element that meets this criteria.  To say that a
+set that contains no elements is ordered is vacuously true and to
+say that any item on the list from index 0 (first) through last
+(list.size() -1) is greater than an item that does not exist is also
+vacuously true.
+
+Step #2:  Show that the condition is true when the loop body is executed.
+
+The post-condition of the smallestOf method ensures that the index of
+the smallest item of the items in the list with an index of first up to
+last (i.e. all items in the range list.get(0) through list.get(first-1))
+will be returned.
+
+The item with the index returned by smallestOf is swapped with the item at
+index first.  Given that the loop invariant holds before the loop is entered,
+i.e. that compare(list.get(i),list.get(first-1)) >= 0 for all elements
+with index i from first to last, when this item is swapped with the item
+at index first and the statement first = first+1 is executed it is implied
+
+   for all indexes first <= i <= last:
+      compare(list.get(i),list.get(first-1)) >= 0
+
+In other words, the loop invariant is maintained.
+
+Step #3:  Show that the loop terminates
+
+In order for the loop to terminate, the loop test first < last must evaluate
+as false.  In other words, the condition first >= last must eventually occur
+and is guaranteed by the following two observations:
+
+1. the value assigned to first is incremented by the assignment statement
+   first = first + 1 on every iteration, and
+
+2. the value assigned to last is a finite integer that cannot be changed
+   within the loop body
+
+These virtually guarantee that the loop will terminate.

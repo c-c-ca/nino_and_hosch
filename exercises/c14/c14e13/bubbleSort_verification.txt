@@ -1,0 +1,128 @@
+Verify the loop invariants for the two bubble sort loops.
+
+Un-modified bubble sort (no check for swaps)
+
+    Outer loop
+
+        loop invariant:  the elements from last+1 through list.size()-1
+         are in their proper position
+
+        list.get(last+1) through list.get(list.size()-1) are ordered,
+        and list.get(0) through list.get(last) are all less than or
+        equivalent to list.get(last+1), or more precisely
+
+           for all indexes i: 0 <= i <= last implies
+              compare(list.get(i),list.get(last+1)) <= 0
+
+    Step #1:  Induction base case
+
+    last is initially assigned a value of list.size()-1, so the condition
+    that list.get(last+1) through list.get(list.size()-1), which means that
+    the condition is applied to the item with an index of list.size(), which
+    does not exist.  In other words, the loop invariant is initially vacuously
+    true because this condition is applied to an empty set.
+
+    Step #2:  Show that the condition must still be true after the loop body
+              is executed
+
+    Given that the post-conditions in the ensure clause of the makePassTo method
+    which state that at the end of method execution all indexes 0 through, but
+    not including, last are less than or equal to the item with index last, it
+    can be assumed that the condition still holds.  This is more precisely
+    stated as
+
+       for all indexes i: 0 <= i < last implies
+          compare(list.get(i),list.get(last)) <= 0
+
+    When last is subsequently decremented in the assignment statement following
+    the method call to makePassTo, it can be stated that
+
+       for all indexes i: 0 <= i <= last implies
+          compare(list.get(i),list.get(last+1)) <= 0
+
+    which was our original loop invariant.
+
+    Further verification requres an analysis of the makePassTo method.
+
+    Step #3:  Loop termination
+
+    In order for loop termination to occur, the loop test last > 0 must evaluate
+    as false.  In other words, the condition last <= 0 must eventually occur.
+    This is guaranteed to occur since last is decremented on every iteration by
+    the statement last = last-1.  This implies that given the loop invariant, 
+    all elements from 0 through list.size()-1 will be in their proper positions
+    when the loop terminates.
+
+    Inner loop
+
+    loop invariant:  the element with an index of next is greater than or
+     equal to all elements with indexes i less than next
+
+       for all indexes i: 0 <= i < next
+          compare(list.get(i),list.get(next)) <= 0
+
+    Step #1: Induction base case
+
+    next is initially assigned a value of 0, so the condition that all indexes
+    less than next (i.e. -1, -2, ...) is vacuously true because it is applied
+    to an empty set.
+
+    Step #2: Show that the loop invariant remains true after execution of the
+             loop body
+
+    Given that the loop invariant is true upon entering the loop, in the event
+    that the condition guarding the if-statement evaluates as true, then the
+    element with an index next+1 is less than next, it is swapped with the item
+    at index next.  This guarantees that the larger element has an index of
+    next+1, or put another way
+
+       for all indexes i: 0 <= i <= next implies
+           compare(list.get(i),list.get(next+1) <= 0
+
+    Otherwise, the if-statement is evaluated as false, meaning that a larger
+    item or equivalent is located at next+1, maintaining the invariant above.
+
+    next is then incremented in the subsequent assignment statement
+    next = next+1, which means that
+
+       for all indexes i: 0 <= i < next implies
+          compare(list.get(i),list.get(next)) <= 0
+
+    Therefore, the largest element of all previous elements encountered so
+    far has an index of next at the end of each iteration, thus, satisfying
+    the loop invariant.
+
+    Step #3:  Loop termination
+
+
+    The condition that must be satisfied in order for the loop to terminate
+    next >= last, and does, in fact, occur when next == last, which in
+    conjunction with the loop invariant having been upheld as shown in the
+    previous steps,
+
+       for all indexes i: 0 <= i < last implies
+          compare(list.get(i),list.get(last)) <= 0
+
+    The conditional guarding the loop body will inevitably be evaluated as
+    false since
+
+    1. the value assigned to next is incremented by the assignment statement
+       next = next+1 on every iteratin, and
+
+    2. the value assigned to last is a finite integer that cannot be modified
+       within the loop body
+
+Modified bubble sort (check for swaps)
+
+
+    Outer loop
+
+        loop invariant modification:  the boolean variable done is false;
+        the method makePassTo has not returned true on any previous iterations
+
+
+    Inner loop
+
+        loop invariant modification:  the boolean variable noItemsSwapped has 
+        a value of true if for all items with an index less than next are in
+        their proper positions; otherwise, noItemsSwapped is set to false
