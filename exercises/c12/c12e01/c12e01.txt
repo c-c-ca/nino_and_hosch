@@ -1,0 +1,18 @@
+Exercise 8.1
+
+a. tic-tac-toe       A list may be used to model each row on a Grid
+b. monopoly          ChanceCards and Positions on a Monopoly board may be
+                     modeled using lists
+c. chess             A list may be used to model each row on a Board
+d. poker             A hand of PlayingCards may be modeled using a list
+e. maze game         A maze may consists of a list of Rooms
+f. cave game         Same as maze game
+
+Exercise 8.2
+
+a. video store      An inventory store may be modeled by using a list
+                    to store all available titles
+b. class schedule   Each classroom may contain a list of Students
+c. windows          The system managing windows may store each reference
+                    to a window in a list
+d. architecture     The plans for each house may be stored in a list
