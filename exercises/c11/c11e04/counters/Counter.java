@@ -17,7 +17,6 @@ public class Counter {
 
         private AddOneIncrementor (Counter counter) {
             this.counter = counter;
-            this.counter.count = 0;
             this.counter.incrementor = this;
         }
 
@@ -66,7 +65,7 @@ public class Counter {
     /**
      * Create a new Counter.
      */
-    private Counter () {
+    protected Counter () {
         count = 0;
         incrementor = null;
     }

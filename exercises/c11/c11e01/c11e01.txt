@@ -1,0 +1,4 @@
+package: java.lang
+interface: iterable
+abstract class: AbstractList
+concrete classes: ArrayList, Vector

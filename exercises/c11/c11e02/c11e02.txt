@@ -1,0 +1,20 @@
+The method specification for removeRange in the definition for the
+abstract class java.util.AbstractList can be divided into 3 sections:
+1. the expected behavior/functionality of the method
+   (i.e. preconditions and postconditions)
+2. where calls to this method occur throughout the class definition
+   (i.e. in other method implementations)
+3. implementation level details for the method itself
+
+
+This first section is information that is relevant to the client.  This
+describes the effect of calling the method on an AbstractList and the meaning
+and types associated with the parameters fromIndex and toIndex.  This
+essentially states the preconditions and postconditions of the contract
+between server and client.
+
+The next two sections are intended exclusivley for subclasses.  This
+includes explicitly stating where this method is called in the implementation
+for AbstractClass (e.g. this method is called by the clear method). And also
+how the method itself is implemented (i.e. by getting a list iterator and
+repeatedly calling ListIterator.next and ListIterator.remove).
