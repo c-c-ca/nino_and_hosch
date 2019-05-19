@@ -1,0 +1,6 @@
+This style of programming is referred to as defensive programming.  It does
+not clearly delineate client and server responsibilities and implicitly
+sanctions the use of exceptions to determine the state of an object.  It
+leads to a style in which the only way to determine an object's state is to
+depend on an exception.  This is a misues of exceptions to detect normal,
+rather than exceptional, conditions.
