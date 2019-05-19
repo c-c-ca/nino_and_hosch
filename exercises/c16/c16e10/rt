@@ -1,0 +1,2 @@
+javac -cp /usr/share/java/junit4-4.12.jar:/home/adam/Projects/nino_and_hosch/ nimGame/*.java
+java -cp /usr/share/java/junit4-4.12.jar:. org.junit.runner.JUnitCore nimGame.PlayerTest
